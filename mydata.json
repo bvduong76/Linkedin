@@ -7,14 +7,12 @@
   "previous" : "No More",
   "edu" : "University of Science HCM",
   "experience": [
-
       {
 		"position": "JAVA DEV",
         "companyName": "Webbynat",
         "content" : "I joined the group to learn webbynat web experience , which will help improve learning in school and have more experience .."
       }
   ],
-
   "education": [
     {
       "schoolName": "University of Science",
@@ -55,6 +53,4 @@
     }
   ],
   "summary" : "I am a beginner , I need to learn more to be able to make a good programmer . Things I need to try Jiang is now well and graduate school ."
-
-
 }

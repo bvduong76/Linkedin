@@ -4,27 +4,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>My CV</title>
 <link rel="stylesheet" type="text/css" href="Mystyle.css">
-<script type="text/javascript" src="data.json"></script>
-
+<script src="angular.min.js"></script>
+<script type="text/javascript" src="mydata.json"></script>
+<script src="app.js"></script>
 </head>
 
-<body>
-<div id = "main">
+<body ng-app="myCv">
+<div id = "main" ng-controller="MainCtrl">
 <br/><br/>
 	<div id = head> 
     	<div id = "avatar">
         	<img id="myavatar" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/12122573_450519461809682_1220889737986960638_n.jpg?oh=e289b80c7042dba953cf317cca078993&oe=57BF6795" alt="avatar">
         </div>
         <div id="info">
-        	<br/>
-          	<span id="name">Bùi Văn Dương</span><br />
-            <span id = "job">Student IT</span><br />
-            <span id = "country">Vietnam</span><br/>
+          	<span id="name" name ="name">{{myInfo.personName}}</span><br />
+            <span id = "job">{{myInfo.mainJob}}</span><br />
+            <span id = "country">{{myInfo.country}}</span><br/>
             <div id = "moreInfo">
                
-                    <p>Current   : Webbynat</p>
-                    <p>Previous   : No More</p>
-                    <p>Education : University of Science HCM</p>
+                    <p>Current   : {{myInfo.current}}</p>
+                    <p>Previous   : {{myInfo.previous}}</p>
+                    <p>Education : {{myInfo.edu}}</p>
                     <br/>
                 
             </div>
