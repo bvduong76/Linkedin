@@ -17,7 +17,12 @@
         	<img id="myavatar" src="https://scontent-hkg3-1.xx.fbcdn.net/v/t1.0-9/12122573_450519461809682_1220889737986960638_n.jpg?oh=e289b80c7042dba953cf317cca078993&oe=57BF6795" alt="avatar">
         </div>
         <div id="info">
-          	<span id="name" name ="name">{{myInfo.personName}}</span><br />
+          	<span id="name" name ="name" ng-hide="editorEnabled">{{myInfo.personName}}</span><a href="#" ng-click="editorEnabled=!editorEnabled">Edit</a>
+			<div ng-show="editorEnabled">
+      <input type="text" ng-model="title">{{name}}</input>
+      <a href="#" ng-click="editorEnabled=!editorEnabled">Done</a>
+    </div>
+			<br/>
             <span id = "job">{{myInfo.mainJob}}</span><br />
             <span id = "country">{{myInfo.country}}</span><br/>
             <div id = "moreInfo">
@@ -37,7 +42,7 @@
         <img class="img" src="http://vignette1.wikia.nocookie.net/arresteddevelopment/images/7/77/Icon-summary.png/revision/latest?cb=20120506185801" /> 
         <h3>Summary</h3>
             <div class="textbg">
-            <span >I am a beginner , I need to learn more to be able to make a good programmer . Things I need to try Jiang is now well and graduate school .</span>
+            <span >{{myInfo.summary}}</span>
             </div>
         </div>
         <hr/>
