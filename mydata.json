@@ -1,0 +1,60 @@
+{
+  "personName" : "Bui Van Duong",
+  "mainJob" : "Student",
+  "country" : "Vietnam",
+
+  "current" : "Webbynat",
+  "previous" : "No More",
+  "edu" : "University of Science HCM",
+  "experience": [
+
+      {
+		"position": "JAVA DEV",
+        "companyName": "Webbynat",
+        "content" : "I joined the group to learn webbynat web experience , which will help improve learning in school and have more experience .."
+      }
+  ],
+
+  "education": [
+    {
+      "schoolName": "University of Science",
+      "major": "Software engineering",
+      "period" : "2013 - Present"
+    },
+    {
+      "schoolName": "Son Tinh 1 high school of Quang Tri",
+      "major": "10A1",
+      "period" : "2010 - 2013"
+    }
+  ],
+
+  "project" : [
+    {
+      "name" : "My paint",
+	  "language" : "C#",
+      "note" : "I do this project in the learning process , including using C # and socket"
+    }
+  ],
+
+  "skill" : [
+    {
+      "name": "C/C++",
+      "level" : 3
+    },
+    {
+      "name": "Java",
+      "level" : 4
+    },
+    {
+      "name": "JavaScript/NodeJs",
+      "level" : 2
+    },
+    {
+      "name": "Android dev",
+      "level" : 3
+    }
+  ],
+  "summary" : "I am a beginner , I need to learn more to be able to make a good programmer . Things I need to try Jiang is now well and graduate school ."
+
+
+}
